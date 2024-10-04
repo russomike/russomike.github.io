@@ -1,40 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Project</title>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <title>Redirecting to LinkedIn</title>
+    <script>
+        // JavaScript redirect
+        window.location.href = "https://www.linkedin.com/in/mikerusso/";
+    </script>
 </head>
 <body>
-    <header>
-        <h1>kerus.org</h1>
-    </header>
- 
-    <main class="main">
-
-        <section class="intro">
-            <h2>hello, please give me a job</h2>
-            <p>you should give me a jobby job.</p>
-        </section>
-
-        <section class="info">
-            <h2>info</h2>
-            <p>hey check out how cool i am</p>
-        </section>
-
-        <section>
-            <h2>the hidden section</h2>
-            <p>the fun idea goes down here</p>
-        </section>
-
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 somethin somethin</p>
-    </footer>
-
+    <?php
+    // PHP redirect (in case JavaScript is disabled)
+    header("Location: https://www.linkedin.com/in/mikerusso/");
+    exit();
+    ?>
+    <p>If you are not redirected, <a href="https://www.linkedin.com/in/mikerusso/">click here</a> to go to Mike Russo's LinkedIn profile.</p>
 </body>
 </html>
