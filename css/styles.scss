@@ -1,0 +1,76 @@
+:root {
+	--text-color:	#999;
+	--bg-color: #222;	
+}
+
+* {
+	box-sizing: border-box;
+	&::after,
+	&::before {
+		box-sizing: inherit;
+	}
+}
+
+
+body {
+	color: var(--text-color);
+}
+
+html,
+body {
+	background-color: var(--bg-color);
+
+	height: 100%;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+
+/* Header and Footer Styles */
+.header,
+.footer {	
+	height: max-content;
+	position: fixed;
+	padding: 2em;
+	backdrop-filter: blur(.5em);
+}
+
+.header {
+	inset: 0 0 auto 0;
+}
+
+.footer {
+	inset: auto 0 0 0;
+}
+
+
+/* Main Scroll Container */
+.main {
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	height: 100dvh;
+}
+
+/* Section Styles */
+section {
+	padding: 2em;
+	scroll-snap-align: start;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Optional: Distinct background colors for clarity */
+}
+
+.intro {
+}
+
+.info {
+}
+
+.extra {
+}
+
+

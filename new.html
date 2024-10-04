@@ -1,19 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Project</title>
+    <title>hi, how's it going?</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
+
+    <script src="sketches.js" defer></script>
+    
     <script src="script.js" defer></script>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <h1>kerus.org</h1>
     </header>
  
-    <main class="main">
+    <main class="main" id="main">
 
         <section class="intro">
             <h2>hello, please give me a job</h2>
@@ -25,14 +31,16 @@
             <p>hey check out how cool i am</p>
         </section>
 
-        <section>
+        <section class="extra">
             <h2>the hidden section</h2>
             <p>the fun idea goes down here</p>
         </section>
 
+        <canvas></canvas>
+
     </main>
     
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 somethin somethin</p>
     </footer>
 
