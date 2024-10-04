@@ -50,6 +50,15 @@ body {
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 	height: 100dvh;
+	position: relative;
+}
+
+.q5Canvas {
+	position: absolute;
+	inset: 0;
+	width: 100% !important;
+	height: 300% !important;
+	z-index: 0;
 }
 
 /* Section Styles */
@@ -59,9 +68,9 @@ section {
 	height: 100%;
 	width: 100%;
 	display: flex;
+	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
-	/* Optional: Distinct background colors for clarity */
 }
 
 .intro {

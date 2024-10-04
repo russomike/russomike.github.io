@@ -1,0 +1,71 @@
+:root {
+  --text-color:	#999;
+  --bg-color: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--text-color);
+}
+
+html,
+body {
+  background-color: var(--bg-color);
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Header and Footer Styles */
+.header,
+.footer {
+  height: max-content;
+  position: fixed;
+  padding: 2em;
+  backdrop-filter: blur(0.5em);
+}
+
+.header {
+  inset: 0 0 auto 0;
+}
+
+.footer {
+  inset: auto 0 0 0;
+}
+
+/* Main Scroll Container */
+.main {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100dvh;
+  position: relative;
+}
+
+.q5Canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 300% !important;
+  z-index: 0;
+}
+
+/* Section Styles */
+section {
+  padding: 2em;
+  scroll-snap-align: start;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
